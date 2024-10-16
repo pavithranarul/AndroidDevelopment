@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "922823887893",
+    "project_id": "octagramchatbackend",
+    "storage_bucket": "octagramchatbackend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922823887893:android:efda17d1e32a5f437f521c",
+        "android_client_info": {
+          "package_name": "com.example.octagramchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApD-l6IjE9TR-mccJ9YVEytpBGf914sMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

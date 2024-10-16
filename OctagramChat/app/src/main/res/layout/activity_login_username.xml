@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:weightSum="100"
+    tools:context=".LoginUsername">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="10">
+
+        <RelativeLayout
+            android:layout_width="333dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/oval_backgroud"
+            android:backgroundTint="@color/my_primary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/welcome_to_octagram"
+                android:textColor="@color/off_white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:src="@drawable/phone_icon"-->
+    <!--        android:layout_weight="10"-->
+    <!--        app:tint="@color/my_primary"/>-->
+    <TextView
+        android:layout_width="255dp"
+        android:layout_height="32dp"
+        android:text="@string/enter_username"
+        android:layout_marginStart="30dp"
+        android:layout_gravity="center_vertical"
+        android:letterSpacing="0.08"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:gravity="center">
+
+        <!--        <com.hbb20.CountryCodePicker-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="15dp"-->
+        <!--            app:ccp_showNameCode="false"/>-->
+
+        <EditText
+            android:layout_width="255dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:hint="@string/username"
+            android:inputType="none"
+            android:fontFamily="monospace"
+            android:background="@drawable/edit_text"
+            android:elevation="5dp"
+            android:id="@+id/login_username"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="10">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/let_me_in"
+            android:id="@+id/login_let_me_in_btn"/>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/resend_otp_in_30_sec"/>-->
+
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/my_primary"
+            android:layout_gravity="center"
+            android:id="@+id/login_progress_bar"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
